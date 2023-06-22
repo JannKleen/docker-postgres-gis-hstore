@@ -1,0 +1,5 @@
+FROM postgres:14.8
+MAINTAINER developers@resmio.com
+
+RUN apt-get update
+RUN apt-get install -y postgresql-14-postgis-3

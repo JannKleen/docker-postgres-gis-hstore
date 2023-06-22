@@ -28,3 +28,17 @@ postgres-11-push-tag-11:
 postgres-11-push-tag-latest:
 	docker push ${IMAGE_NAME}
 
+
+#####################
+### Postgres 14.8 ###
+#####################
+
+postgres-14-build:
+	docker build . -f Dockerfile-14 -t ${IMAGE_NAME}:14 --force-rm
+
+postgres-14-push-tag-14:
+	docker push ${IMAGE_NAME}:14
+
+postgres-14-push-tag-latest:
+	docker push ${IMAGE_NAME}
+
